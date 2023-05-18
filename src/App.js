@@ -1,23 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+
+      <div className="container-cabeçalho">
+       <div className='texto'>
+        <div className='name-usuario'></div>
+        <div className='name-usuario'></div>
+       </div>
+        <div className='avatar-usuario'></div>
+      </div>
+      
+      <div className="container-menu">
+
+        <div className='bloco-menu'>
+          <button className='btn1-1'></button>
+          <div className='btn-2'>
+            <div className='btn2-1'></div>
+            <div className='btn2-1'></div>
+          </div>
+        </div>
+
+        <div className='bloco-menu' style={{
+          position: 'relative'
+        }}>
+          <div className='desabilitado'></div>
+          <div className='btn-1'></div>
+          <div className='btn-2'>
+            <div className='btn2-1'></div>
+            <div className='btn2-1'></div>
+          </div>
+        </div>
+
+        <div className='bloco-menu' style={{
+          position: 'relative'
+        }} >
+          <div className='desabilitado'></div>
+          <div className='btn-1'></div>
+          <div className='btn-2'>
+            <div className='btn2-1'></div>
+            <div className='btn2-1'></div>
+          </div>
+        </div>
+        
+      </div>
+      
     </div>
   );
 }
